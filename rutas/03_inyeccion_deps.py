@@ -12,6 +12,10 @@ dependencias = {
 }
 
 
+def init():
+    print("Soy modulo uno")
+
+
 def load(p):
     paquete = __import__(str(p).replace("/", "."))
     try:
